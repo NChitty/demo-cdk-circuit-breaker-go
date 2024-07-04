@@ -40,4 +40,3 @@ aws [--profile ${profile}] stepfunctions start-sync-execution --step-function-ar
 ```sh
 aws [--profile ${profile}] stepfunctions start-sync-execution --step-function-arn ${arn} --input "{\"targetLambda\": \"DNE\"}" | jq
 ```
-```
