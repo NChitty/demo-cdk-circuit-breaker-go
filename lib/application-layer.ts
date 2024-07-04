@@ -156,6 +156,10 @@ export class ApplicationLayer extends Stack {
     new CfnOutput(this, 'HelloWorldName', {
       value: helloWorldLambda.functionName
     });
+
+    new CfnOutput(this, 'StateMachineArn', {
+      value: stateMachine.stateMachineArn
+    });
   }
 
 }
